@@ -1,6 +1,7 @@
 package application;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 
@@ -26,11 +27,12 @@ public class Program2 {
 		for (Department obj : list) {
 			System.out.println(obj);
 		}
-				
-		/*
 		System.out.println("\n==== TESTE 3: Department insert ====");
+		Department newDepartment = new Department(null, "Sales");
+		departmentDao.insert(newDepartment);
+		System.out.println("Inserted!! New id = " +newDepartment.getId());		
 		
-		
+		/*
 		System.out.println("\n==== TESTE 4: Department Update ====");
 		
 		
